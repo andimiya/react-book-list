@@ -8,6 +8,13 @@ class List extends Component {
     this.title = 'Ready Player One'
     this.author = 'Ernest Cline'
   }
+  // 
+  // componentWillMount(){
+  //   .getBooksFromFakeXHR()
+  //     .then( books => {
+  //       this.
+  //     })
+  // }
 
   render() {
     return (

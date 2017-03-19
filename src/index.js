@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './containers/Header';
-import { List } from './containers/BookList';
+import Header from './containers/Header';
+import List from './containers/BookList';
 
 import './index.css';
 
@@ -12,5 +12,5 @@ ReactDOM.render(
 
 ReactDOM.render(
   <List />,
-  document.getElementById('root')
+  document.getElementById('body')
 );

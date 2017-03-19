@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BookListAppTitle from '../../components/BookListAppTitle.js'
+import BookData from '../../data/booklist.js'
 import './styles.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
 
   doClick = () => {
     console.log(this.title)
+    console.log(BookData)
   }
 
   render() {
@@ -26,5 +28,13 @@ class App extends Component {
     );
   }
 }
+//
+// class Booklist extends Component {
+//   constructor()
+//     super()
+//     this.state = {
+//       books: []
+//     }
+// }
 
 export default App;

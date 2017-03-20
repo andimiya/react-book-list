@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BookListContainer from '../../components/BookList.js'
+import BookList from '../../components/BookList.js'
 import './styles.css';
 
 class List extends Component {
@@ -28,14 +28,6 @@ class List extends Component {
       }
     ]
   }
-
-  //
-  // componentWillMount(){
-  //   .getBooksFromFakeXHR()
-  //     .then( books => {
-  //       this.
-  //     })
-  // }
 
   render() {
     return (

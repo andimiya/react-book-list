@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import '../index.css';
 
-const BookListAppTitle = (props) => (
-  <div className="App-header">
-    <h2>{ props.title }</h2>
-    <p>{ props.subtext }</p>
-    <button onClick={ props.doClick }>Do Click</button>
-  </div>
-)
-
 class Header extends Component {
   constructor(){
     super()
@@ -27,12 +19,10 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="Header">
-        <BookListAppTitle
-          title={this.state.title}
-          subtext={this.state.subtext}
-          doClick={this.doClick}
-        />
+      <div className="App-header">
+        <h2>{ this.state.title }</h2>
+        <p>{ this.state.subtext }</p>
+        <button onClick={ this.state.doClick }>Do Click</button>
       </div>
     );
   }

@@ -1,5 +1,5 @@
-import React from 'react'
-import BookList from '../../components/BookList.js'
+import React, {Component} from 'react';
+import BookList from '../components/BookList.js';
 import '../index.css';
 
 class BookListContainer extends Component {
@@ -7,7 +7,7 @@ class BookListContainer extends Component {
     super(props)
 
     this.state = {
-      BookList : [
+      bookList : [
         {
           _id: 1,
           title: 'Ready Player One',
@@ -29,16 +29,16 @@ class BookListContainer extends Component {
   render() {
     return (
       <ul>
-        this.state.BookList.map( ( { title, author }) =>
+        {this.state.bookList.map((book) =>
           <BookList
-            title={BookList.title}
-            author={BookList.author}
+            key={book._id}
+            title={book.title}
+            author={book.author}
           />
-          )
+        )}
       </ul>
     )
   }
 }
-
 
 export default BookListContainer

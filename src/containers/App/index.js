@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header.js'
-import BookList from '../../components/BookList.js'
+import BookListContainer from '../BookListContainer.js'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
       <Header />
-      <BookList />
+      <BookListContainer />
       </div>
     );
   }

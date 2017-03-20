@@ -1,16 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './containers/Header';
-import List from './containers/BookList';
+import App from './containers/App';
 
 import './index.css';
 
 ReactDOM.render(
-  <Header />,
+  <App />,
   document.getElementById('root')
-);
-
-ReactDOM.render(
-  <List />,
-  document.getElementById('body')
 );

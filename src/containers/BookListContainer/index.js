@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BookList from '../../components/BookList.js'
+import BookListContainer from '../../components/BookList.js'
 import './styles.css';
 
 class List extends Component {
@@ -7,7 +7,7 @@ class List extends Component {
     super(props)
 
     this.state = {
-      BookList : []
+      BookList : [],
     }
 
     this.allBooks = [
@@ -57,4 +57,4 @@ class List extends Component {
   }
 }
 
-export default List
+export default BookListContainer
